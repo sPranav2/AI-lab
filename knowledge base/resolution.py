@@ -37,7 +37,7 @@ def checkResolution(clauses, query):
             if not resolvant:
                 resolved = True
                 break
-            new = new.union(set(resolvents))
+            new = new.union(set())
         if new.issubset(set(clauses)):
             break
         for clause in new:
